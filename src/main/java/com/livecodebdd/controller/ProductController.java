@@ -10,9 +10,16 @@ import java.util.List;
 @RestController
 @RequestMapping("/api")
 public class ProductController {
-    @GetMapping
+    @GetMapping("/products")
     public List<String> getAllProducts(){
         List<String> products = new ArrayList<String>();
+        products.add("Mouse");
+        products.add("keyboard");
+        products.add("Pen");
+        products.add("Screen");
+        products.add("Notebook");
+        products.add("CellPhone");
+
         return products;
     }
 }
